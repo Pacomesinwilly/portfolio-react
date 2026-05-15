@@ -2,60 +2,97 @@ import { motion } from 'framer-motion'
 
 const projects = [
   {
-    num: '01',
-    title: 'Portfolio React',
+    num: '01', title: 'Portfolio React',
     desc: 'Portfolio personnel développé avec React, Vite, Tailwind CSS et Framer Motion. Design sombre avec animations fluides.',
     tags: ['React', 'Vite', 'Tailwind', 'Framer Motion'],
-    color: '#F97316',
-    status: 'En cours',
-    github: 'https://github.com/pacomesinwilly',
+    color: '#F97316', status: 'En cours',
+    github: 'https://github.com/Pacomesinwilly/portfolio-react',
+    gitlab: 'https://gitlab.com/pacomesinwilly/portfolio-react',
   },
   {
-    num: '02',
-    title: 'Network Monitor',
-    desc: 'Outil Python de surveillance réseau qui scanne les IPs du réseau local, effectue des pings et enregistre les résultats dans un fichier log.',
+    num: '02', title: 'Network Monitor',
+    desc: 'Outil Python de surveillance réseau — scan IPs, ping, logs automatiques.',
     tags: ['Python', 'Linux', 'Réseau'],
-    color: '#22C55E',
-    status: 'En cours',
-    github: 'https://github.com/pacomesinwilly',
+    color: '#22C55E', status: 'En cours',
+    github: 'https://github.com/Pacomesinwilly/network-monitor',
+    gitlab: 'https://gitlab.com/pacomesinwilly/network-monitor',
   },
   {
-    num: '03',
-    title: 'E-commerce Laravel',
-    desc: 'Plateforme e-commerce complète avec authentification, gestion de produits, panier et dashboard administrateur.',
-    tags: ['Laravel', 'PHP', 'MySQL', 'Auth'],
-    color: '#EF4444',
-    status: 'En cours',
-    github: 'https://github.com/pacomesinwilly',
+    num: '03', title: 'E-commerce Laravel',
+    desc: 'Plateforme e-commerce complète avec authentification, panier et dashboard admin.',
+    tags: ['Laravel', 'PHP', 'MySQL'],
+    color: '#EF4444', status: 'En cours',
+    github: 'https://github.com/Pacomesinwilly/ecommerce-laravel',
+    gitlab: 'https://gitlab.com/pacomesinwilly/ecommerce-laravel',
   },
   {
-    num: '04',
-    title: 'API REST Node.js',
-    desc: 'API RESTful sécurisée avec authentification JWT, gestion des utilisateurs et connexion MongoDB.',
+    num: '04', title: 'API REST Node.js',
+    desc: 'API RESTful sécurisée avec JWT, gestion utilisateurs et MongoDB.',
     tags: ['Node.js', 'Express', 'MongoDB', 'JWT'],
-    color: '#D4A843',
-    status: 'En cours',
-    github: 'https://github.com/pacomesinwilly',
+    color: '#D4A843', status: 'En cours',
+    github: 'https://github.com/Pacomesinwilly/api-node',
+    gitlab: 'https://gitlab.com/pacomesinwilly/api-node',
   },
   {
-    num: '05',
-    title: 'Dashboard Firebase',
-    desc: 'Dashboard analytique temps réel connecté à Firebase avec graphiques dynamiques Chart.js et authentification.',
+    num: '05', title: 'Dashboard Firebase',
+    desc: 'Dashboard analytique temps réel avec Firebase et graphiques Chart.js.',
     tags: ['React', 'Firebase', 'Chart.js'],
-    color: '#818CF8',
-    status: 'En cours',
-    github: 'https://github.com/pacomesinwilly',
+    color: '#818CF8', status: 'En cours',
+    github: 'https://github.com/Pacomesinwilly/dashboard-react',
+    gitlab: 'https://gitlab.com/pacomesinwilly/dashboard-react',
   },
   {
-    num: '06',
-    title: 'Automation Réseau',
-    desc: 'Automatisation de déploiement serveur Apache avec Python, Ansible et Docker. Infrastructure as Code.',
-    tags: ['Python', 'Ansible', 'Docker', 'Linux'],
-    color: '#06B6D4',
-    status: 'En cours',
-    github: 'https://github.com/pacomesinwilly',
+    num: '06', title: 'Automation Réseau',
+    desc: 'Déploiement automatisé Apache avec Python, Ansible et Docker.',
+    tags: ['Python', 'Ansible', 'Docker'],
+    color: '#06B6D4', status: 'En cours',
+    github: 'https://github.com/Pacomesinwilly/automation',
+    gitlab: 'https://gitlab.com/pacomesinwilly/automation',
   },
 ]
+
+function GitHubIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+    </svg>
+  )
+}
+
+function GitLabIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 01-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 014.82 2a.43.43 0 01.58 0 .42.42 0 01.11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0118.6 2a.43.43 0 01.58 0 .42.42 0 01.11.18l2.44 7.51L23 13.45a.84.84 0 01-.35.94z"/>
+    </svg>
+  )
+}
+
+function LinkBtn({ href, color, children }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      style={{
+        display: 'flex', alignItems: 'center', gap: '6px',
+        padding: '7px 14px', borderRadius: '6px', fontSize: '0.78rem',
+        background: '#1a1a1a', color: '#E8E8E8',
+        border: '1px solid #2a2a2a', textDecoration: 'none',
+        fontWeight: 500, transition: 'border-color 0.2s, color 0.2s',
+      }}
+      onMouseEnter={e => {
+        e.currentTarget.style.borderColor = color
+        e.currentTarget.style.color = color
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.borderColor = '#2a2a2a'
+        e.currentTarget.style.color = '#E8E8E8'
+      }}
+    >
+      {children}
+    </a>
+  )
+}
 
 export default function Projects() {
   return (
@@ -63,13 +100,17 @@ export default function Projects() {
       <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 2rem' }}>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           style={{ marginBottom: '3rem' }}
         >
           <p style={{ color: '#F97316', fontSize: '0.8rem', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
             Ce que je construis
           </p>
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#E8E8E8' }}>Mes projets</h2>
+          <p style={{ color: '#555', fontSize: '0.85rem', marginTop: '0.5rem' }}>
+            Chaque projet est disponible sur GitHub et GitLab — clique pour consulter le code source.
+          </p>
         </motion.div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.25rem' }}>
@@ -83,19 +124,15 @@ export default function Projects() {
               style={{
                 background: '#111', border: '1px solid #1f1f1f',
                 borderRadius: '14px', padding: '1.5rem',
-                cursor: 'pointer', transition: 'border-color 0.2s',
                 position: 'relative', overflow: 'hidden',
               }}
             >
-              {/* Numéro décoratif */}
               <span style={{
                 position: 'absolute', top: '1rem', right: '1.25rem',
                 fontSize: '3rem', fontFamily: 'Playfair Display, serif',
-                color: '#1a1a1a', fontWeight: 900, lineHeight: 1,
-                userSelect: 'none',
+                color: '#1a1a1a', fontWeight: 900, lineHeight: 1, userSelect: 'none',
               }}>{p.num}</span>
 
-              {/* Status */}
               <span style={{
                 fontSize: '0.65rem', padding: '3px 8px', borderRadius: '20px',
                 background: `${p.color}20`, color: p.color,
@@ -111,7 +148,6 @@ export default function Projects() {
                 {p.desc}
               </p>
 
-              {/* Tags */}
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: '1.25rem' }}>
                 {p.tags.map(t => (
                   <span key={t} style={{
@@ -121,15 +157,17 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* Barre colorée bas */}
-              <div style={{ height: '2px', background: `linear-gradient(to right, ${p.color}, transparent)`, borderRadius: '1px', marginBottom: '1rem' }} />
+              <div style={{ height: '2px', background: `linear-gradient(to right, ${p.color}, transparent)`, borderRadius: '1px', marginBottom: '1.25rem' }} />
 
-              <a href={p.github} target="_blank" rel="noreferrer" style={{
-                color: p.color, fontSize: '0.8rem', textDecoration: 'none',
-                display: 'flex', alignItems: 'center', gap: '6px',
-              }}>
-                Voir sur GitHub →
-              </a>
+              <div style={{ display: 'flex', gap: '0.75rem' }}>
+                <LinkBtn href={p.github} color="#F97316">
+                  <GitHubIcon /> GitHub
+                </LinkBtn>
+                <LinkBtn href={p.gitlab} color="#FC6D26">
+                  <GitLabIcon /> GitLab
+                </LinkBtn>
+              </div>
+
             </motion.div>
           ))}
         </div>
