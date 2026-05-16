@@ -1,16 +1,55 @@
-# React + Vite
+# 🚀 Portfolio — Pacôme SINWILLY
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel développé avec React, Vite, Tailwind CSS et Framer Motion.
 
-Currently, two official plugins are available:
+![Portfolio Preview](public/pacome.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
+> Bientôt disponible
 
-## React Compiler
+## ✨ Fonctionnalités
+- Page d'accueil avec animations Framer Motion
+- Page À propos avec timeline et compétences
+- Page Projets avec liens GitHub + GitLab
+- Page Contact avec formulaire
+- Page Admin protégée par mot de passe
+- Design sombre responsive
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies
+- React 18 + Vite
+- Tailwind CSS
+- Framer Motion
+- React Router DOM
 
-## Expanding the ESLint configuration
+## 🚀 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/Pacomesinwilly/portfolio-react.git
+cd portfolio-react
+npm install
+npm run dev
+```
+
+Ouvre `http://localhost:5173`
+
+## 📁 Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   └── ScrollReveal.jsx
+└── pages/
+    ├── Home.jsx
+    ├── About.jsx
+    ├── Projects.jsx
+    ├── Contact.jsx
+    └── Admin.jsx
+```
+
+## 👤 Auteur
+**Pacôme SINWILLY** — Développeur Web & Réseaux
+- GitHub : [@Pacomesinwilly](https://github.com/Pacomesinwilly)
+- GitLab : [@pacomesinwilly](https://gitlab.com/pacomesinwilly)
+- Email : pacomesinwilly@gmail.com
